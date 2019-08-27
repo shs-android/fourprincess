@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/tourListFragment">
+
+    <fragment
+        android:id="@+id/tourListFragment"
+        android:name="com.shs.namhansanseong.TourListFragment"
+        android:label="fragment_tour_list"
+        tools:layout="@layout/fragment_tour_list" >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/tourDetailFragment"
+        android:name="com.shs.namhansanseong.TourDetailFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_tour_detail"
+        >
+
+    </fragment>
+    <fragment
+        android:id="@+id/stampCameraFragment"
+        android:name="com.shs.namhansanseong.StampCameraFragment"
+        android:label="fragment_stamp_camera"
+        tools:layout="@layout/fragment_stamp_camera"
+        >
+    </fragment>
+</navigation>
