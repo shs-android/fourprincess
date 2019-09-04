@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "769571999917",
+    "firebase_url": "https://namhansanseong-34462.firebaseio.com",
+    "project_id": "namhansanseong-34462",
+    "storage_bucket": "namhansanseong-34462.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:769571999917:android:3b857fa027ff42e5",
+        "android_client_info": {
+          "package_name": "com.shs.namhansanseong"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "769571999917-imua0mmetgbrfdtjfqn00tb2pumrl7bf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9yALCC64AolX6NPvDAm8LgNW4yWXKkoo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "769571999917-imua0mmetgbrfdtjfqn00tb2pumrl7bf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

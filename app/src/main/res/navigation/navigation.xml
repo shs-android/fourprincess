@@ -11,6 +11,10 @@
         android:label="fragment_tour_list"
         tools:layout="@layout/fragment_tour_list" >
 
+        <action android:id="@+id/action_tourListFragment_to_stampCameraFragment"
+                app:destination="@id/stampCameraFragment"/>
+        <action android:id="@+id/action_tourListFragment_to_tourDetailFragment"
+                app:destination="@id/tourDetailFragment"/>
     </fragment>
 
     <fragment

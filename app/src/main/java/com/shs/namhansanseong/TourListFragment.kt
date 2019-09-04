@@ -8,6 +8,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.Navigation
+import androidx.navigation.fragment.findNavController
 
 /**
  * A simple [Fragment] subclass.
@@ -22,8 +24,14 @@ class TourListFragment : Fragment() {
         val binding = DataBindingUtil.inflate<com.shs.namhansanseong.databinding.FragmentTourListBinding>(
             inflater, R.layout.fragment_tour_list, container, false)
 
+        binding.testButton.setOnClickListener {
+            clickOpenCamera()
+        }
         return binding.root
     }
 
 
+    fun clickOpenCamera() {
+        findNavController().navigate(R.id.action_tourListFragment_to_stampCameraFragment)
+    }
 }
