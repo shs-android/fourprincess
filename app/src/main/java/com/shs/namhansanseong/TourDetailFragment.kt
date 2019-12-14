@@ -10,6 +10,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.shs.namhansanseong.databinding.FragmentTourDetailBinding
 import java.util.*
@@ -29,6 +30,7 @@ class TourDetailFragment : Fragment() {
 
         val binding = DataBindingUtil.inflate<FragmentTourDetailBinding>(
             inflater, R.layout.fragment_tour_detail, container, false).apply {
+            toolbar.setNavigationOnClickListener { findNavController().navigateUp() }
             title.text = place.name
             description.text = place.description
             image.setImageResource(place.image)

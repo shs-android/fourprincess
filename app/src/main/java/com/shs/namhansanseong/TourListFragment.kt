@@ -88,24 +88,19 @@ class TourListFragment : Fragment() {
     ): View? {
         val binding = DataBindingUtil.inflate<com.shs.namhansanseong.databinding.FragmentTourListBinding>(
             inflater, R.layout.fragment_tour_list, container, false
-        )
-
-        binding.testButton.setOnClickListener {
-            clickOpenCamera()
-        }
-
-        binding.recyclerView.adapter = PlaceAdapter().apply {
-            list = places
-            listener = {
-                findNavController().navigate(TourListFragmentDirections.actionTourListFragmentToTourDetailFragment(it))
+        ).apply {
+            recyclerView.adapter = PlaceAdapter().apply {
+                list = places
+                listener = {
+                    findNavController().navigate(TourListFragmentDirections.actionTourListFragmentToTourDetailFragment(it))
+                }
             }
-        }
 
-        binding.recyclerView.layoutManager = LinearLayoutManager(requireContext())
+            recyclerView.layoutManager = LinearLayoutManager(requireContext())
+        }
 
         return binding.root
     }
-
 
     fun clickOpenCamera() {
         findNavController().navigate(R.id.action_tourListFragment_to_stampCameraFragment)
