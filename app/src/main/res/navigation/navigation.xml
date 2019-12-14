@@ -24,6 +24,10 @@
         tools:layout="@layout/fragment_tour_detail"
         >
 
+        <argument
+            android:name="place"
+            app:argType="com.shs.namhansanseong.Place"
+            />
     </fragment>
     <fragment
         android:id="@+id/stampCameraFragment"
